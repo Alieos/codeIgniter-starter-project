@@ -83,3 +83,15 @@ defined('EXIT_USER_INPUT')     OR define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+/*
+|--------------------------------------------------------------------------
+| Custom Constants
+|--------------------------------------------------------------------------
+*/
+define('SITE_NAME', 'Starter Project');
+define('ADMIN_SITE_NAME', 'Starter Project - Admin Panel');
+
+define('RESOURCES_FOLDER', 'http://localhost/_project_portal/resources/');
+define('SYSTEM_DATE_FORMAT', 'd M Y');
+define('DATETIME_ZONE', 'Asia/Singapore');
