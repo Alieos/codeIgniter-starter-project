@@ -48,7 +48,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 <!-- .container start -->
 <div class="container">
-	<h1 class="page-header">Welcome to CodeIgniter!</h1>
+	<div class="page-header">
+		<h1>Welcome to CodeIgniter!</h1>
+		<p>Loaded packages:</p>
+		<div class="btn-group">
+			<a id="btn-jq" href="http://jquery.com/" target="_blank"><i class="fa fa-code"></i> jQuery</a><span class="space-h"></span>
+			<a id="btn-bs" href="http://getbootstrap.com/" target="_blank"><i class="fa fa-css3 fa-fw"></i> Bootstrap</a><span class="space-h"></span>
+			<a id="btn-fa" href="http://fontawesome.io//" target="_blank"><i class="fa fa-flag fa-fw"></i> Font Awesome</a><span class="space-h"></span>
+			<a id="btn-ps" href="http://parsleyjs.org/" target="_blank"><i class="fa fa-check fa-fw"></i> Parsley JS</a><span class="space-h"></span>
+			<a id="btn-gulp" href="http://gulpjs.com/" target="_blank"><i class="fa fa-terminal fa-fw"></i> Gulp JS</a>
+		</div>
+	</div>
 
 	<!-- .panel-info start -->
 	<div id="panel-ci" class="panel panel-primary">
