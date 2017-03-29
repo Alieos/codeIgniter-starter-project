@@ -5,6 +5,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<?php $this->load->view('_snippets/meta'); ?>
 	<?php $this->load->view('_snippets/head_resources'); ?>
+	
+	<!-- Parsley CSS -->
+	<link href="<?=RESOURCES_FOLDER;?>project/parsley.css" rel="stylesheet" type="text/css" />
+
 	<style>
 		.space-h {
 			display: inline-block;
@@ -49,21 +53,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- .container start -->
 <div class="container">
 	<div class="page-header">
-		<h1>Welcome to CodeIgniter!</h1>
-		<p>Loaded packages:</p>
-		<div class="btn-group">
-			<a id="btn-jq" href="http://jquery.com/" target="_blank"><i class="fa fa-code"></i> jQuery</a><span class="space-h"></span>
-			<a id="btn-bs" href="http://getbootstrap.com/" target="_blank"><i class="fa fa-css3 fa-fw"></i> Bootstrap</a><span class="space-h"></span>
-			<a id="btn-fa" href="http://fontawesome.io//" target="_blank"><i class="fa fa-flag fa-fw"></i> Font Awesome</a><span class="space-h"></span>
-			<a id="btn-ps" href="http://parsleyjs.org/" target="_blank"><i class="fa fa-check fa-fw"></i> Parsley JS</a><span class="space-h"></span>
-			<a id="btn-gulp" href="http://gulpjs.com/" target="_blank"><i class="fa fa-terminal fa-fw"></i> Gulp JS</a>
-		</div>
+		<h1>
+			<i class="fa fa-power-off fa-fw" style="color: #1EA176"></i> CodeIgniter Starter Project
+		</h1>
+		<p class="lead">
+			This is a simple starter project with often-used packages loaded and setup.
+		</p>
 	</div>
 
-	<!-- .panel-info start -->
+	<!-- #panel-ci start -->
 	<div id="panel-ci" class="panel panel-primary">
 		<div class="panel-heading">
-			<h2 class="panel-title">Things to take note</h2>
+			<h2 class="panel-title">
+				<i class="fa fa-code fa-fw"></i> Welcome to CodeIgniter!
+			</h2>
 		</div>
 		<div class="panel-body">
 			<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
@@ -80,13 +83,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?>
 		</div>
 	</div>
-	<!-- .panel-info end -->
+	<!-- #panel-ci end -->
+
+	<!-- #panel-pkg start -->
+	<div id="panel-pkg" class="panel panel-info">
+		<div class="panel-heading">
+			<h2 class="panel-title">Packages in Project</h2>
+		</div>
+		<div class="list-group">
+			<a class="list-group-item" href="http://jquery.com/" target="_blank"><i class="fa fa-code"></i> jQuery</a>
+			<a class="list-group-item" href="http://getbootstrap.com/" target="_blank"><i class="fa fa-css3 fa-fw"></i> Bootstrap</a>
+			<a class="list-group-item" href="http://fontawesome.io//" target="_blank"><i class="fa fa-flag fa-fw"></i> Font Awesome</a>
+			<a class="list-group-item" href="http://parsleyjs.org/" target="_blank"><i class="fa fa-check-circle fa-fw"></i> Parsley JS</a>
+			<a class="list-group-item" href="http://gulpjs.com/" target="_blank"><i class="fa fa-terminal fa-fw"></i> Gulp JS</a>
+		</div>
+	</div>
+	<!-- #panel-pkg end -->
 	<hr/>
 
-	<!-- test bootstrap panel start -->
+	<!-- #panel-bs start -->
 	<div id="panel-bs" class="panel panel-default">
 		<div class="panel-heading">
-			<h2 class="panel-title">Test Bootstrap</h2>
+			<h2 class="panel-title">
+				<i class="fa fa-css3 fa-fw"></i> Test Bootstrap
+			</h2>
 		</div>
 		<div class="panel-body">
 			<h3>Bootstrap CSS</h3>
@@ -141,12 +161,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 	</div>
-	<!-- test bootstrap panel end -->
+	<!-- #panel-bs end -->
 
-	<!-- test font-awesome panel start -->
+	<!-- #panel-fa start -->
 	<div id="panel-fa" class="panel panel-default">
 		<div class="panel-heading">
-			<h3 class="panel-title">Test Font Awesome</h3>
+			<h2 class="panel-title">
+				<i class="fa fa-flag fa-fw"></i> Test Font Awesome
+			</h2>
 		</div>
 		<div class="panel-body">
 			<p>
@@ -158,12 +180,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</p>
 		</div>
 	</div>
-	<!-- test font-awesome panel end -->
+	<!-- #panel-fa end -->
 
-	<!-- test parsley js start -->
+	<!-- #panel-ps start -->
 	<div id="panel-ps" class="panel panel-default">
 		<div class="panel-heading">
-			<h3 class="panel-title">Test Parsley JS</h3>
+			<h2 class="panel-title">
+				<i class="fa fa-check-circle fa-fw"></i> Test Parsley JS
+			</h2>
 		</div>
 		<div class="panel-body">
 			<div class="col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-3">
@@ -184,12 +208,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 	</div>
-	<!-- test parsley js end -->
+	<!-- #panel-ps js end -->
 
 	<div style="height: 50px">&nbsp;</div>
 </div>
 <!-- .container end -->
 <?php $this->load->view('_snippets/body_resources'); ?>
+
+<!-- Parsley JS -->
+<script src="<?=RESOURCES_FOLDER;?>vendor/parsleyjs/parsley.min.js"></script>
 <script>
 	function cancel()
 	{

@@ -16,6 +16,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <!-- Bootstrap Core JavaScript -->
 <script src="<?=RESOURCES_FOLDER;?>vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Parsley JS -->
-<script src="<?=RESOURCES_FOLDER;?>vendor/parsleyjs/parsley.min.js"></script>
